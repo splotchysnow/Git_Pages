@@ -1,19 +1,21 @@
 # Github-page
 
-**Images**
-![This is an image of me](profile.jfif)
-
 **Headings**
 #### The Personal Page for Guan Li
+
+**Images**
+![This is an image of me](profile.jfif)
 
 **Styling Text**
 **This is a bold text for styling text**
 
+# introduction
+I am a 4th year Computer Science Student, I am a transfer student from community college. My favorite coding language is python.
+
 **Quoting text**
->This is a quoted text:
+>I wish i don't start my assignment this late all the time.... - Guan Li:
 
 **Quoting code**
-Python codes:
 ```
 print("Hello World")
 ```
@@ -22,7 +24,8 @@ print("Hello World")
 The link to google is : (https://www.google.com/).
 
 
-**Section Links**
+**Section Links Anchor link??**
+# The little thing on lfet of this?
 [Markdown - Link](#Github-page)
 
 **Relative Links**
@@ -41,7 +44,6 @@ My Favorite Chips:
 1. princkles
 2. lays
 3. kettle lays??
-
 
 **Task Lists**
 - [ ] Do home work
