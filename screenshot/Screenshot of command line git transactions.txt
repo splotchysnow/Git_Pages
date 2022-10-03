@@ -1,0 +1,178 @@
+a1493@LAPTOP-84E6ENHJ MINGW64 ~
+$ cd Downloads/
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads
+$ cd code/
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code
+$ ls
+Git_Pages/
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code
+$ cd Git_Pages/
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ ls
+README.md
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ branch add-read-me
+bash: branch: command not found
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/a1493/Downloads/code/Git_Pages/.git/
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ ls
+README.md
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ add
+bash: add: command not found
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git branch add-read-me
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ ls
+README.md
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ vim README.md
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ cat README.md
+# Git_Pages
+Guan Li's User Page
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ vim README.md
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git commit "Update readme file"
+error: pathspec 'Update readme file' did not match any file(s) known to git
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git commit -m "Update readme file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'a1493@LAPTOP-84E6ENHJ.(none)')
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git config --global user.email "guancli321@gmail.com"
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git config --global user.name "Guan Li"
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git commit -m "Update readme file"
+[main bf8170c] Update readme file
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 272 bytes | 272.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/splotchysnow/Git_Pages.git
+   ea983cb..bf8170c  main -> main
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git branch add-read-me
+fatal: a branch named 'add-read-me' already exists
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (main)
+$ git checkout add-read-me
+Switched to branch 'add-read-me'
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ ls
+README.md
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ vim README.md
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ git commit -m
+error: switch `m' requires a value
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ git commit -m "Update readme Value (with new branch_"
+[add-read-me 6642aea] Update readme Value (with new branch_
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ git commit -m "Update readme Value (with new branch)"
+On branch add-read-me
+nothing to commit, working tree clean
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ git status
+On branch add-read-me
+nothing to commit, working tree clean
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ git push
+fatal: The current branch add-read-me has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin add-read-me
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ git push --set-upstream origin add-read-me
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'add-read-me' on GitHub by visiting:
+remote:      https://github.com/splotchysnow/Git_Pages/pull/new/add-read-me
+remote:
+To https://github.com/splotchysnow/Git_Pages.git
+ * [new branch]      add-read-me -> add-read-me
+branch 'add-read-me' set up to track 'origin/add-read-me'.
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$ ^C
+
+a1493@LAPTOP-84E6ENHJ MINGW64 ~/Downloads/code/Git_Pages (add-read-me)
+$
